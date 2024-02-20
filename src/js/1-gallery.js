@@ -88,3 +88,6 @@ function createGalleryMarkup(images) {
     )
     .join('');
 }
+
+
+new SimpleLightbox( '.gallery a' );
