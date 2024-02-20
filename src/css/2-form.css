@@ -1,0 +1,42 @@
+a {display: block;
+margin-bottom: 20px;}
+
+.feedback-form{
+  display: flex;
+flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input {
+width: 360px;
+height: 40px;
+box-sizing: border-box;
+border: 1px solid #808080;
+border-radius: 4px;
+}
+textarea {
+  width: 360px;
+  height: 80px;
+  box-sizing: border-box;
+    border: 1px solid #808080;
+    border-radius: 4px;
+}
+
+button {
+  width: 95px;
+  height: 40px;
+  background-color: #4E75FF;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  background-color: #6C8CFF;
+}
