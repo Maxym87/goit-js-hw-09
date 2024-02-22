@@ -19,15 +19,16 @@ if (rawData) {
 
 form.addEventListener('submit', event => {
   event.preventDefault();
-  
-  localStorage.removeItem(STORAGE_KEY);
-
-  form.email.value = '';
-  form.message.value = '';
 
   const formData = {
     email: form.email.value,
     message: form.message.value,
   };
+
+  localStorage.removeItem(STORAGE_KEY);
+
+  form.email.value = '';
+  form.message.value = '';
+
   console.log(formData);
 });
