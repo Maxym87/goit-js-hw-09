@@ -20,6 +20,11 @@ if (rawData) {
 form.addEventListener('submit', event => {
   event.preventDefault();
 
+  if (form.email.value === '' || form.message.value === '') {
+    alert('Будь ласка, заповніть обидва поля форми.');
+    return;
+  }
+
   const formData = {
     email: form.email.value,
     message: form.message.value,
